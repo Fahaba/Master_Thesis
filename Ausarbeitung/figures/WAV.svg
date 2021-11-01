@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="WAV.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.0482005"
+     inkscape:cx="463.65175"
+     inkscape:cy="335.33661"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid33486" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <rect
+       x="345"
+       y="690"
+       width="235"
+       height="80"
+       id="rect208874" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#808000;fill-rule:evenodd;stroke-width:0.190772"
+       id="rect35"
+       width="129.31279"
+       height="13.856913"
+       x="40.07296"
+       y="21.479982" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.189529"
+       id="rect147"
+       width="31.75"
+       height="6.0238881"
+       x="40.07296"
+       y="15.456097" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="42.057335"
+       y="19.562538"
+       id="text47981"><tspan
+         sodipodi:role="line"
+         id="tspan47979"
+         style="font-size:3.175px;stroke-width:0.198437"
+         x="42.057335"
+         y="19.562538">Chunk desctiptor</tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.203875"
+       id="rect59167"
+       width="37.703125"
+       height="5.953125"
+       x="85.713593"
+       y="22.472168" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:6.35px;line-height:1;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="43.450817"
+       y="27.164778"
+       id="text8794"><tspan
+         sodipodi:role="line"
+         id="tspan8792"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450817"
+         y="27.164778">52 49 46 46 20 4F 66 02 57 41 56 45</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:6.35px;stroke-width:0.198437"
+         x="43.450817"
+         y="33.53352"
+         id="tspan21348"><tspan
+   id="tspan33978"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"> R  I  F  F              W  A  V  E</tspan> </tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.22186"
+       id="rect59278"
+       width="37.703125"
+       height="4.960938"
+       x="85.713593"
+       y="29.417484" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.64583px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="88.950615"
+       y="32.804073"
+       id="text61932"><tspan
+         sodipodi:role="line"
+         id="tspan61930"
+         style="font-size:2.64583px;stroke-width:0.198437"
+         x="88.950615"
+         y="32.804073">ChunkSize = 40255264</tspan></text>
+    <rect
+       style="fill:#aa4400;fill-rule:evenodd;stroke-width:0.190772"
+       id="rect35-2"
+       width="129.31279"
+       height="13.856913"
+       x="40.072964"
+       y="43.308113" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.189529"
+       id="rect147-3"
+       width="31.75"
+       height="6.0238881"
+       x="40.072964"
+       y="37.284218" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="42.057339"
+       y="41.390659"
+       id="text47981-3"><tspan
+         sodipodi:role="line"
+         id="tspan47979-0"
+         style="font-size:3.175px;stroke-width:0.198437"
+         x="42.057339"
+         y="41.390659">FMT Subchunk I</tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.203875"
+       id="rect59167-5"
+       width="37.703125"
+       height="5.953125"
+       x="85.713593"
+       y="44.300293" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.22186"
+       id="rect59278-4"
+       width="37.703125"
+       height="4.960938"
+       x="85.713593"
+       y="51.245609" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.64583px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="94.110001"
+       y="54.632195"
+       id="text61932-5"><tspan
+         sodipodi:role="line"
+         id="tspan61930-0"
+         style="font-size:2.64583px;stroke-width:0.198437"
+         x="94.110001"
+         y="54.632195">ChunkSize = 16</tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.144161"
+       id="rect59167-5-1"
+       width="18.851562"
+       height="5.953125"
+       x="126.39327"
+       y="44.300297" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.156878"
+       id="rect59278-4-2"
+       width="18.851562"
+       height="4.960938"
+       x="126.39327"
+       y="51.245609" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="127.17544"
+       y="53.023037"
+       id="text61932-5-6"><tspan
+         sodipodi:role="line"
+         id="tspan61930-0-3"
+         style="font-size:2.11667px;stroke-width:0.198437"
+         x="127.17544"
+         y="53.023037">Audioformat = 1 </tspan><tspan
+         sodipodi:role="line"
+         style="font-size:2.11667px;stroke-width:0.198437"
+         x="127.17544"
+         y="55.668865"
+         id="tspan126266">       (PCM)</tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.144161"
+       id="rect59167-5-1-4"
+       width="18.851562"
+       height="5.953125"
+       x="147.22922"
+       y="44.300297" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.156878"
+       id="rect59278-4-2-4"
+       width="18.851562"
+       height="4.960938"
+       x="147.22922"
+       y="51.245613" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.85208px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="148.2058"
+       y="54.251862"
+       id="text61932-5-6-5"><tspan
+         sodipodi:role="line"
+         style="font-size:1.85208px;stroke-width:0.198437"
+         x="148.2058"
+         y="54.251862"
+         id="tspan126266-5">NumChannels = 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.82083px;line-height:1;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="43.450817"
+       y="48.992901"
+       id="text8794-8"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450817"
+         y="48.992901"
+         id="tspan21348-5">66 6D 74 20 10 00 00 00 01 00 02 00</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450817"
+         y="54.945011"
+         id="tspan84340"> f  m  t  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450817"
+         y="60.897118"
+         id="tspan84338" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450817"
+         y="66.84922"
+         id="tspan81630" /></text>
+    <rect
+       style="fill:#aa4400;fill-rule:evenodd;stroke-width:0.190772"
+       id="rect35-2-6"
+       width="129.31279"
+       height="13.856913"
+       x="40.072964"
+       y="65.136246" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.189529"
+       id="rect147-3-4"
+       width="31.75"
+       height="6.0238881"
+       x="40.072964"
+       y="59.11235" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="42.057339"
+       y="63.218784"
+       id="text47981-3-2"><tspan
+         sodipodi:role="line"
+         id="tspan47979-0-6"
+         style="font-size:3.175px;stroke-width:0.198437"
+         x="42.057339"
+         y="63.218784">FMT Subchunk II</tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.203875"
+       id="rect59167-5-3"
+       width="37.703125"
+       height="5.953125"
+       x="85.713593"
+       y="66.128426" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.22186"
+       id="rect59278-4-7"
+       width="37.703125"
+       height="4.960938"
+       x="85.713593"
+       y="73.07373" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.64583px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="90.934998"
+       y="76.460312"
+       id="text61932-5-7"><tspan
+         sodipodi:role="line"
+         id="tspan61930-0-34"
+         style="font-size:2.64583px;stroke-width:0.198437"
+         x="90.934998"
+         y="76.460312">ByteRate =  176400</tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.144161"
+       id="rect59167-5-1-7"
+       width="18.851562"
+       height="5.953125"
+       x="126.39327"
+       y="66.128426" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.156878"
+       id="rect59278-4-2-2"
+       width="18.851562"
+       height="4.960938"
+       x="126.39327"
+       y="73.07373" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="127.96918"
+       y="76.041771"
+       id="text61932-5-6-3"><tspan
+         sodipodi:role="line"
+         style="font-size:2.11667px;stroke-width:0.198437"
+         x="127.96918"
+         y="76.041771"
+         id="tspan126266-8">BlockAlign = 4</tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.144161"
+       id="rect59167-5-1-4-9"
+       width="18.851562"
+       height="5.953125"
+       x="147.22922"
+       y="66.128426" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.156878"
+       id="rect59278-4-2-4-5"
+       width="18.851562"
+       height="4.960938"
+       x="147.22922"
+       y="73.07373" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.85208px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="147.41206"
+       y="76.079979"
+       id="text61932-5-6-5-3"><tspan
+         sodipodi:role="line"
+         style="font-size:1.85208px;stroke-width:0.198437"
+         x="147.41206"
+         y="76.079979"
+         id="tspan174422">BitsPerSample = 16</tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.203875"
+       id="rect59167-5-3-9"
+       width="37.703125"
+       height="5.953125"
+       x="44.041706"
+       y="66.12841" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.22186"
+       id="rect59278-4-7-0"
+       width="37.703125"
+       height="4.960938"
+       x="44.04171"
+       y="73.07373" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.64583px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="48.46936"
+       y="76.460312"
+       id="text61932-5-7-1"><tspan
+         sodipodi:role="line"
+         id="tspan61930-0-34-0"
+         style="font-size:2.64583px;stroke-width:0.198437"
+         x="48.46936"
+         y="76.460312">SampleRate = 44100 </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.82083px;line-height:1;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="43.450817"
+       y="70.821022"
+       id="text8794-8-0"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450817"
+         y="70.821022"
+         id="tspan84340-3">44 AC 00 00 10 B1 02 00 04 00 10 00</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450817"
+         y="76.773125"
+         id="tspan84338-3" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450817"
+         y="82.725243"
+         id="tspan81630-0" /></text>
+    <rect
+       style="fill:#008080;fill-rule:evenodd;stroke-width:0.190772"
+       id="rect35-2-6-3"
+       width="129.31279"
+       height="13.856913"
+       x="40.072956"
+       y="86.964348" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.189529"
+       id="rect147-3-4-4"
+       width="31.75"
+       height="6.0238881"
+       x="40.072956"
+       y="80.94046" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="42.057331"
+       y="85.046898"
+       id="text47981-3-2-5"><tspan
+         sodipodi:role="line"
+         id="tspan47979-0-6-2"
+         style="font-size:3.175px;stroke-width:0.198437"
+         x="42.057331"
+         y="85.046898">Data Subchunk</tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.203875"
+       id="rect59167-5-3-0"
+       width="37.703125"
+       height="5.953125"
+       x="85.713585"
+       y="87.956535" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.22186"
+       id="rect59278-4-7-9"
+       width="37.703125"
+       height="4.960938"
+       x="85.713593"
+       y="94.901848" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.64583px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="85.775612"
+       y="98.288429"
+       id="text61932-5-7-18"><tspan
+         sodipodi:role="line"
+         id="tspan61930-0-34-3"
+         style="font-size:2.64583px;stroke-width:0.198437"
+         x="85.775612"
+         y="98.288429">Subchunk2Size = 40255228 </tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.227623"
+       id="rect59278-4-2-2-2"
+       width="39.687496"
+       height="4.960938"
+       x="126.39327"
+       y="94.901848" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.64583px;line-height:1;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="127.88485"
+       y="96.949791"
+       id="text61932-5-7-18-5"><tspan
+         sodipodi:role="line"
+         id="tspan61930-0-34-3-1"
+         style="font-size:2.64583px;stroke-width:0.198437"
+         x="127.88485"
+         y="96.949791"> Sample 1</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:2.64583px;stroke-width:0.198437"
+         x="127.88485"
+         y="99.595627"
+         id="tspan250437">left channel </tspan></text>
+    <rect
+       style="fill:#ffd42a;stroke-width:0.203875"
+       id="rect59167-5-3-9-9"
+       width="37.703125"
+       height="5.953125"
+       x="44.041702"
+       y="87.956528" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.22186"
+       id="rect59278-4-7-0-0"
+       width="37.703125"
+       height="4.960938"
+       x="44.041706"
+       y="94.901848" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text208872"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;shape-inside:url(#rect208874)" />
+    <rect
+       style="fill:#008080;stroke-width:0.198437"
+       id="rect247942"
+       width="41.671875"
+       height="7.9374995"
+       x="125.40109"
+       y="86.964348" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.144161"
+       id="rect59167-5-1-7-0"
+       width="18.851562"
+       height="5.953125"
+       x="126.39327"
+       y="87.956535" />
+    <rect
+       style="fill:#ffd42a;stroke-width:0.144161"
+       id="rect59167-5-1-4-9-4"
+       width="18.851562"
+       height="5.953125"
+       x="147.2292"
+       y="87.956535" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.82083px;line-height:1;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="43.450813"
+       y="92.649147"
+       id="text8794-8-0-8"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450813"
+         y="92.649147"
+         id="tspan84340-3-2">64 61 74 61 FC 3E 66 02 A5 FF 8E FF</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450813"
+         y="98.60125"
+         id="tspan203824"> d  a  t  a</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450813"
+         y="104.55336"
+         id="tspan84338-3-2" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.82083px;font-family:'Courier New';-inkscape-font-specification:'Courier New, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.198437"
+         x="43.450813"
+         y="110.50547"
+         id="tspan81630-0-5" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.64583px;line-height:1;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.198437"
+       x="147.92982"
+       y="96.988091"
+       id="text61932-5-7-18-5-7"><tspan
+         sodipodi:role="line"
+         id="tspan61930-0-34-3-1-2"
+         style="font-size:2.64583px;stroke-width:0.198437"
+         x="147.92982"
+         y="96.988091">   Sample 1</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:2.64583px;stroke-width:0.198437"
+         x="147.92982"
+         y="99.633926"
+         id="tspan250437-3">right channel </tspan></text>
+  </g>
+</svg>

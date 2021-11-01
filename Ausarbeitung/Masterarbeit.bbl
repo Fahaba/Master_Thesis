@@ -1,0 +1,357 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{rwth_survey_categories}{online}{}
+    \name{author}{1}{}{%
+      {{hash=AR}{%
+         family={Aachen},
+         familyi={A\bibinitperiod},
+         given={RWTH},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AR1}
+    \strng{fullhash}{AR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Forschungsgebiete Höhrtechnik und Akustik der RWTH Aachen}
+    \verb{url}
+    \verb https://www.akustik.rwth-aachen.de/cms/Institut-fuer-Hoertechnik-und-
+    \verb Akustik/Forschung/~fnru/Forschungsgebiete-Medizinische-Akustik/
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{atricle_audiotracing}{online}{}
+    \name{author}{1}{}{%
+      {{hash=b}{%
+         family={btarunr},
+         familyi={b\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{b1}
+    \strng{fullhash}{b1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Tech Powerup Artikel zu Audio Raycasting}
+    \verb{url}
+    \verb https://www.techpowerup.com/246820/nvidia-does-a-trueaudio-rt-cores-a
+    \verb lso-compute-sound-ray-tracing
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{brLibWav}{online}{}
+    \name{author}{1}{}{%
+      {{hash=TBLDP}{%
+         family={Team},
+         familyi={T\bibinitperiod},
+         given={British Library Digital\bibnamedelima Preservation},
+         giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim
+  D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TBLDP1}
+    \strng{fullhash}{TBLDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{WAVE PCM soundfile format}
+    \verb{url}
+    \verb https://wiki.dpconline.org/images/archive/4/46/20160217163258!WAV_Ass
+    \verb essment_v1.0.pdf
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{Sapp}{online}{}
+    \name{author}{1}{}{%
+      {{hash=sASCS}{%
+         prefix={soundfile++},
+         prefixi={s\bibinitperiod},
+         family={App\bibnamedelima (Sapp)},
+         familyi={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Craig\bibnamedelima Stuart},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ASCSs1}
+    \strng{fullhash}{ASCSs1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{WAV Format Assessment}
+    \verb{url}
+    \verb http://soundfile.sapp.org/doc/WaveFormat/
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{nyquist_official}{online}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={Audacity},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Nyquist Audacity}
+    \verb{url}
+    \verb https://www.audacityteam.org/about/nyquist/
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{wind_effect}{online}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={'Alex'},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Wind Besipiel Audacity Forum}
+    \verb{url}
+    \verb https://www.audacity-forum.de/download/edgar/nyquist/nyquist-doc/exam
+    \verb ples/rbd/15-wind-tutorial.htm
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{ny_manual}{online}{}
+    \name{author}{1}{}{%
+      {{hash=DRB}{%
+         family={Dannenberg},
+         familyi={D\bibinitperiod},
+         given={Roger\bibnamedelima B.},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DRB1}
+    \strng{fullhash}{DRB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Nyquist Reference Manual}
+    \verb{url}
+    \verb http://www.cs.cmu.edu/~rbd/doc/nyquist/nyquistman.pdf
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{arenz_fourier}{online}{}
+    \name{author}{1}{}{%
+      {{hash=AP}{%
+         family={Arenz},
+         familyi={A\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AP1}
+    \strng{fullhash}{AP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Arenz Fouriertransformation}
+    \verb{url}
+    \verb https://www.math.uni-trier.de/~schulz/Prosem-0405/Arenz.pdf
+    \endverb
+    \field{year}{2005}
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{de_moivre}{online}{}
+    \name{author}{1}{}{%
+      {{hash=SC}{%
+         family={Scheider},
+         familyi={S\bibinitperiod},
+         given={Cynthia},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SC1}
+    \strng{fullhash}{SC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{De Moivre Theorem}
+    \verb{url}
+    \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.722.2485&rep
+    \verb =rep1&type=pdf
+    \endverb
+    \field{year}{2011}
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{cuda-zone}{online}{}
+    \name{author}{1}{}{%
+      {{hash=CN}{%
+         family={Corporation},
+         familyi={C\bibinitperiod},
+         given={NVIDIA},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CN1}
+    \strng{fullhash}{CN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Offizielle CUDA Webseite NVIDIA Developer}
+    \verb{url}
+    \verb https://developer.nvidia.com/cuda-zone
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{29}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{gtx1080}{online}{}
+    \name{author}{1}{}{%
+      {{hash=CN}{%
+         family={Corporation},
+         familyi={C\bibinitperiod},
+         given={NVIDIA},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CN1}
+    \strng{fullhash}{CN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Nvidia Geforce GTX 10 Serie}
+    \verb{url}
+    \verb https://www.nvidia.com/de-de/geforce/10-series/
+    \endverb
+    \field{year}{2021}
+    \field{urlday}{29}
+    \field{urlmonth}{06}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{ms_docs_winsock}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Microsoft Docs für socket}
+    \verb{url}
+    \verb https://docs.microsoft.com/en-us/windows/win32/api/winsock2/nf-winsoc
+    \verb k2-socket
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{nvidia_docs_grid}{online}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={NVIDIA},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{CUDA Developer Blog}
+    \verb{url}
+    \verb https://developer.nvidia.com/blog/cuda-refresher-cuda-programming-mod
+    \verb el/
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{nvidia_docs_best_practice}{online}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={NVIDIA},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{CUDA docs}
+    \verb{url}
+    \verb https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{pycuda_docs}{online}{}
+    \name{author}{1}{}{%
+      {{hash=DP}{%
+         family={Dokumentation},
+         familyi={D\bibinitperiod},
+         given={PyCUDA},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DP1}
+    \strng{fullhash}{DP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{PyCUDA Docs}
+    \verb{url}
+    \verb https://documen.tician.de/pycuda/
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+\enddatalist
+\endinput

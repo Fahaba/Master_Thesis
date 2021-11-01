@@ -1,0 +1,13 @@
+> Task :run
+Hello I am a Groovy artist
+    PROX    CAL: ctor -> [theHenry][Henry][0]
+    PROX    RES: ctor <- [g_artwork.Painting@169bb4dd]
+Created a new painting during the last year
+    PROX    CAL: artClass -> 
+    PROX    CAL: println -> [This is a painting!]
+This is a painting!
+    PROX    RES: println <- [null]
+    PROX    RES: artClass <- [null]
+    PROX    CAL: info -> 
+    PROX    RES: info <- [This Painting - theHenry - has benn created by Henry at the age of 0]
+This Painting - theHenry - has benn created by Henry at the age of 0

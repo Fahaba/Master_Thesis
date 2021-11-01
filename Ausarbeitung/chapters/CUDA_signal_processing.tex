@@ -1,0 +1,63 @@
+% !TeX spellcheck = de_DE
+
+\section{Parallele Fouriertransformation mit CUDA} \label{CUDA_DSP}
+
+\subsection{Überblick}
+Um ein Gesamtbild über das implementierte Projekt zu bekommen, wird an dieser Stelle ein grober Rahmen, der die wichtigsten Funktionalitäten und Anforderungen an die Implementierung umfasst, angegeben.
+Aus dem Abschnitt (Idee/Zielsetzung) ist bereits bekannt, dass Audiodaten in Form von WAV-Dateien analysiert und deren anteilige Frequenzen dargestellt werden, was in einer Sequentiellen Umgebung zunächst kein größeres Problem darstellt.
+Diese Arbeit geht jedoch einen Schritt weiter, parallelisiert diesen Prozess und nutzt die Schnittstelle CUDA aus, um je nach verwendeter Hardware dieses Problem auf die Grafikkarte zu skalieren. 
+Mit Schritt der Parallelisierung stellen sich folgende Fragen:
+- Wie kommen die Audiodaten auf die Shader-Kerne der Grafikkarte?
+- Welche Form haben diese Daten?
+- Wie und in welchen Intervallen werden diese Daten portioniert und wie viele Daten werden parallel verarbeitet?
+- Welche Programmiersprache wird verwendet?
+- Mit welcher Methode werden die Daten verarbeitet bzw. umgerechnet?
+- Wie werden die Daten nach erfolgreicher Berechnung wieder verfügbar gemacht?
+- Form der Visualisierung?
+
+Einige dieser Fragen bringen komplexere Strukturen mit sich und sind zunächst nicht einfach zu beantworten.
+Eine Audiodatei ist im Grunde genommen eine Textdatei, mit vielen Hexadezimalen Werten und einer Header-Information, wie in Abschnitt "WAV-Format" beschrieben.
+Aus dieser Datei muss die Information über Sample-Rate, Anzahl der Kanäle und der Größe eines Samples extrahiert werden. Dies wird im weiteren Verlauf für die Aufteilung der Samples auf die CUDA-Kerne und Bestimmung der Frequenzen verwendet.
+Die Sampledaten werden mithilfe des \enquote{StreamWriter}-Subprojekts über eine TCP-Schnittstelle verfügbar gemacht. Diese TCP-Schnittstelle wird von einem weiteren Teilprojekt AudioTracer benutzt, um die Daten weiter zu verarbeiten.
+Der \texttt{AudioTracer} liegt in zweifacher Ausführung in den Programmiersprachen C und Python vor. Beide Varianten liefern dieselbe Ausgabe und können somit auf Performance und Semantikebene verglichen werden. 
+Die Aufgabe der Implementierung ist, die über die TCP-Schnittstelle empfangenen Audio Sample-Daten in eine für CUDA passende Form zu bringen und diese mithilfe von einigen API-Anweiseungen und Verteilungsentscheidungen auf die CUDA-Kerne der GPU zu partitionieren.
+Jeder dieser CUDA-Kerne führt dann eine Fourier-Transformation auf den jeweils zugesicherten Teilbereich durch. Da die Audiodaten sehr viel mehr Samples beinhalten, als CUDA-Kerne vorhanden sind, muss vorher entschieden werden, wieviele Samples auf einmal bearbeitet werden können.
+
+\subsection{StreamWriter(C/C++)}
+
+Die Aufgabe des Teilprojekt StreamWriter ist es, Audiodateien einzulesen und diese Daten über eine Schnittstelle für andere Teilprojekte verfügbar zu machen.
+Um die Header-Informationen zu extrahieren, wird die Datei im Binärmodus geöffnet. Bestimmte Bereiche des Headers sind mit verschiedenen Größen versehen. 
+Die Verwendung eines "typedef struct" ermöglicht es, die größen der Variablen vordefinieren zu können. 
+Im weiteren Verlauf werden alle Headerinformationen so herausgefiltert.
+Die wichtigen bzw. in diesem Projekt verwendeten Headerinformationen sind Anzahl der Kanäle (NumChannels), Sample Rate ( wie viele Samples pro Sekunde ), Bitanzahl pro Sample (BitsPerSample) sowie die eigentlichen Samples.
+Die Daten liegen in Hexadezimalform in Little-Endian vor. Diese Hexadezimalen Werte werden im Integer Format gespeichert. 
+Der hier beschriebene Teil des Programms "StreamWriter" ist in der Datei WAV.c bzw. WAV.h implementiert. 
+Die Implementierung wird in allen weiteren Varianten verwendet, um eine WAV-Datei einlesen und als Integer-Array speichern zu können.
+Analog zur Zielsetzung, werden die gespeicherten Audiodaten mithilfe einer Schnittstelle für das AudioTracer Programm zur Verfügung gestellt.
+Im Laufe der Bearbeitung dieser Arbeit sind dabei zwei Generationen von Schnittstellen entstanden, auf die im Folgenden Bezug genommen wird.
+Die Grundsätzliche Idee war es, die Sampledaten dem AudioTracer als kontinuierlichen Datenstrom zur Verfügung zu stellen. 
+Die erste Version erzeugt eine Datei, in der die Daten der Samples als Integer Werte geschrieben werden. Diese werden an dieser Stelle im AudioTracer wieder Stückweise eingelesen.
+Die zweite Generation dieser Schnittstelle sieht vor, die Daten über das Netzwerkprotokoll TCP zu versenden. Der AudioTracer greift die Verbindung auf der anderen Seite auf und ließt die Daten in vordefinierten Größen ein.
+
+\paragraph{Datei-Variante}
+
+In dieser Generation der Datenschnittstelle werden die Audiodaten über eine \enquote{Vermittlerdatei} an das AudioTracer Projekt weitergeleitet. 
+Die zuvor in Integer umgewandelte Werte werden in Hexadezimaler Form in die Datei \enquote{out.dat} geschrieben.
+Jeweils 1000 Werte je Audiokanal werden pro Iteration der Routine in dieser Datei angehangen.
+An dieser Stelle entsteht folgendes Problem: Der Zugriff auf eine Datei erfolgt sequientiell, d.h. es ist nur jeweils ein Zugriff zur gleichen Zeit auf eine Datei Systembedingt gestattet.
+Das AudioTracer Modul verlangt lesenden Zugriff auf die zuvor geschriebenen Daten.
+Im StreamWriter Modul muss die Datei somit zwangsweise geschlossen werden, damit ein weiterer Zugriff seitens des AudioTracers stattfinden kann. 
+Hier kann es unter Umständen zu einem Starvation-Problem kommen, wodurch das AudioTracer Modul keinen lesenden Zugriff auf die Datei erlangen kann.
+Im StreamWriter muss daher eine "Zwangspause" in der Schleifeniteration implementiert werden. Um beiden Modulen einen Zugriff zu ermöglichen, wird eine Pause durch \texttt{Sleep(rand() \% 50)} realisiert.
+Eine Randomisierung löst an dieser Stelle das Problem, dass auch bei festen Wartezeiten ein solches Starvation-Problem entstehen kann, wenn z.B. die Ausführungszeiten des AudioTracer Moduls immer leicht über der vordefinierten Pause liegen.
+
+\paragraph{TCP-Variante}
+
+Diese Generation der Schnittstelle wird durch das TCP-Netzwerk Protokoll realisiert, anstelle einer Datei, die als Vermittler dient. 
+Diese Variante des StreamWriters wartet auf eine erfolgreiche Verbindung auf der anderen Seite der TCP-Verbindung. 
+Sobald diese Verbindung besteht, werden die Integer Daten in einen String von Hexadezimalwerten umgewandelt. Die Umwandlung in Hexadezimal erfolgt, um eine gleichbleibende Größe der TCP-Pakete zu gewährleisten.
+Bei einem 16Bit-PCM WAV-Format ist ein Sample in einem Kanal jeweils zwei Byte groß, sodass vier Byte pro Zeitpunkt an Speicher benötigt werden. 
+Die Hexadezimalen Werte lassen sich leicht durch die Verwendung eines stringstream-Objekts in einen String Objekt umwandeln, das für das Senden von Daten benötigt wird. 
+Wie im vorherigen Abschnitt beschrieben, werden pro Iteration 1000 Samples pro Audiokanal gesendet. 
+Bei der TCP-Variante beträgt der versendete String eine Größe von 10000 Bytes, da die Audiokanäle durch Leerzeichen und die einzelnen Sample Gruppen durch ein \texttt{Newline} Zeichen abgegrenzt sind.
+Eine ``Zwangspause'', wie in der ersten Generation ist hier durch die Verwendung des TCP-Ptotokolls nicht nötig.

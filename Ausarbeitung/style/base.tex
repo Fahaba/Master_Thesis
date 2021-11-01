@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+%\usepackage[onehalfspacing]{setspace}
+
+\usepackage[ngerman]{babel} 		% For special German characteers
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{amsmath}
+
+\usepackage[backend=bibtex,style=ieee]{biblatex}
+\addbibresource{./bib/internet.bib}
+
+\usepackage[parfill]{parskip} 				 % New paragraph instead of new line
+\usepackage[margin=3cm]{geometry} 	% In order to make the margins smaller
+\usepackage[hidelinks]{hyperref} 	      % No more blue colored links
+\usepackage[scaled=0.8]{beramono}	 % Enables Bera Mono Font (notepad style font)
+
+\usepackage{enumitem}				% To remove vertical space between bullet points
+
+%	Graphics manipulation
+\usepackage{svg}
+\usepackage{graphicx}				 % Enables importing graphics, extension of graphics package
+\usepackage{subcaption} 			% Not sure anymore, something to do with subfigure captions
+\usepackage[export]{adjustbox}	  % Provides macros to ad­just boxed con­tent
+\usepackage{amssymb}			% Provides Math symbols like natural numbers
+
+%	Which titles to add to the Toc
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\usepackage{svg}
+\usepackage{pdfpages}
+%	Java Code Style
+\usepackage{color}
+
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+\usepackage{listings}
+
+\lstset{
+%	xleftmargin=2.5em,
+%	framexleftmargin=2em,
+	frame = single,
+	tabsize = 2, %% Sets tab space width.
+	showstringspaces = false, %% Prevents space marking in strings, string is defined as the text that is generally printed directly to the console.
+	numbers = left, %% Displays line numbers on the left.
+	commentstyle = \color{green}, %% Sets comment color.
+	keywordstyle = \color{blue}, %% Sets  keyword color.
+	stringstyle = \color{red}, %% Sets  string color.
+	rulecolor = \color{black}, %% Sets frame color to avoid being affected by text color.
+	basicstyle = \small \ttfamily , %% Sets listing font and size.
+	breaklines = true, %% Enables line breaking.
+	numberstyle = \tiny,
+%	aboveskip=0pt,
+	belowskip=0pt
+}
+
+\input{style/nyquist.tex}
+
+\usepackage{framed}
+\FrameSep0pt
+
+\usepackage{mdframed}
+\mdfdefinestyle{mystyle}{%
+	backgroundcolor=lightgray,
+	rightline=true,
+	innerleftmargin=10,
+	innerrightmargin=10,
+	outerlinewidth=3pt,
+	topline=false,
+	rightline=true,
+	bottomline=false,
+	%	skipabove=\topsep,
+	%	skipbelow=\topsep
+	skipabove=\baselineskip,
+	skipbelow=\baselineskip
+}
+
+\usepackage{dirtree}
+\usepackage{scrextend}
+
+% Format Paragraph
+%\usepackage{titlesec}
+%\titleformat{\paragraph}
+%{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+%\titlespacing*{\paragraph}
+%{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% Show blackline to see overhfull boxes
+\overfullrule=2cm
+
+\captionsetup[lstlisting]{font={small,tt}}
+

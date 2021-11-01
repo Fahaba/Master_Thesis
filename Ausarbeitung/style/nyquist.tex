@@ -1,0 +1,53 @@
+% Define Language
+
+\definecolor{codeBlue}{RGB}{0,0,255}
+\definecolor{codeGreen}{RGB}{0,128,0}
+\definecolor{codePurple}{RGB}{128,0,255}
+\definecolor{codeOrange}{RGB}{255,128,128}
+\definecolor{codePink}{RGB}{255,0,255}
+\definecolor{codeGray}{rgb}{0.5,0.5,0.5}
+
+\lstdefinelanguage{Nyquist}
+{
+  % list of keywords
+	keywords={
+		stretch,
+		mult,
+		env,
+		sum,
+		reson,
+		scale,
+		noise,
+		pwl
+	},
+	keywords=[3]{
+		String,
+		int,
+		float
+	},
+	keywords=[4]{
+		buildPWL,
+		buildENV,
+		buildReson,
+		wind
+	},
+	keywords=[8]{
+		define,
+		function,
+		control,
+		return,
+		version,
+		name,
+		type,
+		nyquist
+	},
+	sensitive=false, % keywords are not case-sensitive
+	morecomment=[l]{//}, % l is for line comment
+	morecomment=[s]{/*}{*/}, % s is for start and end delimiter
+	morestring=[b]", % defines that strings are enclosed in double quotes
+	morestring=[b]', % wrong: should be [b]
+	keywordstyle=[2]\color{codeOrange},
+	keywordstyle=[3]\color{codePurple},
+	keywordstyle=[4]\color{codeGreen},
+	keywordstyle=[8]\color{codeGray}
+}
