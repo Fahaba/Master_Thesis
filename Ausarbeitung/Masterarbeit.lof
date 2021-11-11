@@ -17,72 +17,74 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {8}{\ignorespaces StreamWriter Main Loop\relax }}{18}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Schleifenoperation: Hinterer Teil\relax }}{21}{figure.caption.18}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Sequenzdiagramm StreamWriter\relax }}{19}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Schleifenoperation: Vorderer Teil\relax }}{22}{figure.caption.19}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Socketinitialisierung\relax }}{20}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces CUDA Vorbereitungen\relax }}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Schleifenoperation: Hinterer Teil\relax }}{22}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Topologie der CUDA Kernels \cite {nvidia_docs_grid}\relax }}{26}{figure.caption.22}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Schleifenoperation: Vorderer Teil\relax }}{24}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Gridbeispiel\relax }}{27}{figure.caption.23}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Sequenzdiagramm AudioTracer-C\relax }}{26}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces CUDA Kernel\relax }}{28}{figure.caption.24}%
+\contentsline {figure}{\numberline {14}{\ignorespaces CUDA Vorbereitungen\relax }}{28}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Kernelfunktion \_dft\relax }}{29}{figure.caption.25}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Topologie der CUDA Kernels \cite {nvidia_docs_grid}\relax }}{29}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Sequenzdiagramm AudioTracer-C\relax }}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Gridbeispiel\relax }}{30}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces Erstellung eines Sockets in Python\relax }}{31}{figure.caption.28}%
+\contentsline {figure}{\numberline {17}{\ignorespaces CUDA Kernel\relax }}{30}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces Erstellung eines Sockets in Python\relax }}{31}{figure.caption.29}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Kernelfunktion \_dft\relax }}{32}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {19}{\ignorespaces Sequenzdiagramm AudioTracer-Python\relax }}{33}{figure.caption.30}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Erstellung eines Sockets in Python\relax }}{33}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {20}{\ignorespaces Erstellung eines Plots mit Ajax Datenübertragung\relax }}{34}{figure.caption.31}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Ausführung CUDA FFT in Python\relax }}{34}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {21}{\ignorespaces Erstellung eines Plots mit Ajax Datenübertragung\relax }}{35}{figure.caption.32}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Sequenzdiagramm AudioTracer-Python\relax }}{35}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {22}{\ignorespaces Sequenzdiagramm StreamWriter\relax }}{36}{figure.caption.33}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Erstellung eines Plots mit Ajax Datenübertragung\relax }}{36}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {23}{\ignorespaces Überblick Teilprojekt Audioparkour mit CUDA\relax }}{37}{figure.caption.34}%
+\contentsline {figure}{\numberline {23}{\ignorespaces JavaScript-Code zur Erstellung der Datenarrays\relax }}{38}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {24}{\ignorespaces Positionsveränderung Audioparkour\relax }}{38}{figure.caption.35}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Test 1\relax }}{40}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {25}{\ignorespaces Sequenzdiagramm Audioparkour\relax }}{40}{figure.caption.36}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Test 3\relax }}{40}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {26}{\ignorespaces Verwendete Pakete im Projekt Audioparkour\relax }}{41}{figure.caption.37}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Test 5\relax }}{41}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {27}{\ignorespaces Python: dataclass\relax }}{41}{figure.caption.38}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Test 7\relax }}{41}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {28}{\ignorespaces Audioparkour: Einlesen der WAV-Datei\relax }}{41}{figure.caption.39}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Test 2\relax }}{42}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {29}{\ignorespaces Audioparkour: Erstellung des CUDA-Kontext\relax }}{42}{figure.caption.40}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Test 4\relax }}{42}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {30}{\ignorespaces Audioparkour: Globale Variablen\relax }}{42}{figure.caption.41}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Test 6\relax }}{43}{figure.caption.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {31}{\ignorespaces Audioparkour: SourceModule\relax }}{43}{figure.caption.42}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Test 8\relax }}{43}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {32}{\ignorespaces Audioparkour: Sounddevice Stream\relax }}{45}{figure.caption.43}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Überblick Teilprojekt Audioparcours mit CUDA\relax }}{45}{figure.caption.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {33}{\ignorespaces Audioparkour: Sounddevice Callback Methode\relax }}{46}{figure.caption.44}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Positionsveränderung Audioparcours\relax }}{46}{figure.caption.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {34}{\ignorespaces Audioparkour: Nutzereingaben\relax }}{47}{figure.caption.45}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Sequenzdiagramm Audioparcours\relax }}{48}{figure.caption.52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {35}{\ignorespaces Audioparkour: Manipulation über CUDA\relax }}{48}{figure.caption.46}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Verwendete Pakete im Projekt Audioparcours\relax }}{49}{figure.caption.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {36}{\ignorespaces Test 1\relax }}{50}{figure.caption.51}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Python: dataclass\relax }}{49}{figure.caption.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {37}{\ignorespaces Test 3\relax }}{50}{figure.caption.52}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Audioparcours: Einlesen der WAV-Datei\relax }}{50}{figure.caption.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {38}{\ignorespaces Test 5\relax }}{51}{figure.caption.55}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Audioparcours: Erstellung des CUDA-Kontext\relax }}{50}{figure.caption.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {39}{\ignorespaces Test 7\relax }}{51}{figure.caption.56}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Audioparcours: Globale Variablen\relax }}{51}{figure.caption.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {40}{\ignorespaces Test 2\relax }}{52}{figure.caption.59}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Audioparcours: SourceModule\relax }}{52}{figure.caption.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {41}{\ignorespaces Test 4\relax }}{52}{figure.caption.60}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Audioparcours: Sounddevice Stream\relax }}{54}{figure.caption.59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {42}{\ignorespaces Test 6\relax }}{53}{figure.caption.63}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Audioparcours: Sounddevice Callback-Methode\relax }}{54}{figure.caption.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {43}{\ignorespaces Test 8\relax }}{53}{figure.caption.64}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Audioparcours: Nutzereingaben\relax }}{56}{figure.caption.61}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {44}{\ignorespaces Audioparcours: Manipulation über CUDA\relax }}{57}{figure.caption.62}%

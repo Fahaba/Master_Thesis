@@ -61,6 +61,28 @@
     \field{urlyear}{2021}
   \endentry
 
+  \entry{fahaba_github}{online}{}
+    \name{author}{1}{}{%
+      {{hash=HF}{%
+         family={Hasselbach},
+         familyi={H\bibinitperiod},
+         given={Fabian},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HF1}
+    \strng{fullhash}{HF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Quellcode der Abschlussarbeit}
+    \verb{url}
+    \verb https://github.com/fahaba/Master_Thesis
+    \endverb
+    \field{urlday}{04}
+    \field{urlmonth}{07}
+    \field{urlyear}{2021}
+  \endentry
+
   \entry{brLibWav}{online}{}
     \name{author}{1}{}{%
       {{hash=TBLDP}{%

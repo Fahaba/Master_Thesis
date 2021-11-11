@@ -4,25 +4,17 @@
 
 \subsection{Was ist CUDA}
 
-NVIDIA CUDA \cite{cuda-zone} ist eine Plattform zur parellelen Ausführung von Nutzerdefiniertem Code auf den Shader Kernen der Grafikkarte. In bestimmten Anwendungsfällen kann die Ausführungsgeschwindigkeit von Applikationen stark verbessert werden.
+NVIDIA CUDA \cite{cuda-zone} ist eine Plattform zur parallelen Ausführung von Nutzer definiertem Code auf den Shader-Kernen der Grafikkarte. In bestimmten Anwendungsfällen kann die Ausführungsgeschwindigkeit von Applikationen dadurch stark verbessert werden.
 Grundsätzlich ist dies in solchen Applikationen möglich, deren Aufgabe in viele kleine Teilprobleme zerlegt werden kann. 
-Den Sequentiellen Anteil dieser Programme, wie z.B. die bereitstellung der Eingabeinformationen und verteilung dieser Informationen auf die verwendeten Shader Kerne der Grafikkarte übernimmt in solchen Anwendungen die CPU, während die jeweiligen Teilprobleme auf den Shader Kernen selbst ausgeführt wird.
+Den sequentiellen Anteil dieser Programme, wie z.B. die Bereitstellung der Eingabeinformationen und Verteilung dieser Informationen auf die verwendeten Shader-Kerne der Grafikkarte übernimmt in solchen Anwendungen die CPU, während die jeweiligen Teilprobleme auf den Shader-Kernen selbst ausgeführt wird.
 Außerdem wird die zentrale CPU dafür verwendet, die Ausgabe der entsprechenden GPU-Prozessen zu verwalten, zu sammeln und letztendlich auf verschiedene Art und Weisen darzustellen oder weiterzuleiten.
-Diese Technologie ermöglicht die Etablierung von neuronalen Netzen und Deep Learning, die heutzutage riesige Anwendungsgebiete umfassen. Letzeres wird in dieser Arbeit nicht thematisiert.
-Das von NVIDIA entwickelte CUDA Toolkit ist kompatibel mit den meisten beliebten Programmiersprachen (C, C++, C\#, Java, Python). 
+Diese Technologie ermöglicht die Etablierung von neuronalen Netzen und Deep-Learning Strukturen, die heutzutage riesige Anwendungsgebiete umfassen. Letzteres wird in dieser Arbeit nicht thematisiert.
+Das von NVIDIA entwickelte CUDA-Toolkit ist kompatibel mit den meisten größeren Programmiersprachen (C, C++, C\#, Java, Python).
 
 \subsection{Vorteile und Anwendungsgebiete}
-
-Verarbeitung von vielen gleichzeitigen Rechenoperationen.
-Auf der CPU großen Overhead vermeiden
-Neuronale Netze für Deep Learning
-Verwendung in KI-realisierungen für autonome Prozesse, wie autonomes Fahren, Robotik, Auswertung von riesigen Datenmengen z.b. für Mustererkennung, Prognosen, etc.
-In der heutigen Welt nicht mehr vernachlässigbar
-Technologien der CPU die physikalische Möglichkeiten limitiert, während Grafikkarten immer größer skaliert werden können und im Verbund arbeiten können (SLI)
-Großes Anwendungsgebiet in digitalen Währungen wie z.b. Bitcoin, Etherum, etc. mit einer riesigen "Mining"-Community.
+Die Vorteile, die eine Plattform wie CUDA bietet sind zahlreich. Allen voran und bereits erwähnt steht die Verarbeitung von vielen parallelen Rechenoperationen im Vordergrund. Komplexe Probleme können dadurch von der CPU auf die GPU ausgelagert werden, um einen Overhead auf der CPU zu vermeiden. Strukturen wie Neuronale Netze können im Deep-Learning Bereich etabliert werden, wobei mit einer großen Masse an Daten gearbeitet wird. Einen großen Sprung durch parallel Computing wurde im Bereich von KI-Realisierungen für autonome Prozesse wie autonomes Fahren, in der Robotik, der Auswertung von riesigen Datenmengen z.B. für Mustererkennung, Prognosen, u.v.m. erreicht. Diese aufgelisteten Techniken und Prozessstrukturen sind in der heutigen Welt nicht mehr vernachlässigbar und auch sinnvoll, da die Technologien der CPU mittlerweile an physikalische Möglichkeiten limitiert sind, während Grafikkarten immer größer skaliert werden können und auch im Verbund arbeiten können (SLI im Falle von Nvidia Produkten). Ein großes Anwendungsgebiet stellten z.B. digitale Währungen wie Bitcoin, Etherum, etc. dar, die über Blockchain-Technologien auf der Grafikkarte erzeugt, bzw. berechnet werden können. 
 
 \subsection{Anwendungsfall NVIDIA GeForce GTX 1080}
 \label{sub:gtx1080}
 
-Die verwendete Hardware, auf die sich diese Arbeit bezieht ist eine GEFORCE GRX 1080. NVIDIA gibt in den technischen Spezifikation \cite{gtx1080} 2560 NVIDIA CUDA Cores an mit einer Basistaktung von 1607 MHz und einem Boost-Takt von 1733 MHz.
-Mit einer adäquaten Aufteilung können somit 2560 Rechenoperationen gleichzeitig ausgeführt werden. ~~~Die Rechenleistung beträgt bis zu 8,9 Teraflops bei single Precision Fließkomma Operationen.~~~
+Die verwendete Hardware, auf die sich diese Arbeit bezieht ist eine GEFORCE GTX 1080. NVIDIA gibt in den technischen Spezifikation \cite{gtx1080} 2560 NVIDIA CUDA-Kerne mit einer Basistaktung von 1607 MHz und einem Boost-Takt von 1733 MHz an.

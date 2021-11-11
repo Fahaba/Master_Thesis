@@ -3,17 +3,16 @@
 \section{Signalverarbeitung} \label{chap:signalprocessing}
 
 \subsection{WAV Format \label{sub:WAV} \cite{brLibWav} \cite{Sapp}}
-Das Waveform Audiodatei Format WAV ist ein Audioformat zum Speichern von Audioinformationen als Bitstream. Dieses Audioformat basiert auf der von Microsoft 
-Entwickelten Resource Interchange File Format Spezifikation (RIFF), die die Speicherung von Audiostreams in Teilen bzw. Chunks vorsieht. Jede WAV Datei besitzt eine Headerinformation, die in solche Chunks aufgeteilt wird, gefolgt von den eigentlich gespeicherten Daten. Diese Chunks werden durch eine eindeutige Kennzeichnung (ID), die Länge der darin befindliche Daten sowie durch die Daten selbst beschrieben. WAV Dateien bestehen in der Regel aus den drei Chunks RIFF-Header, FMT-Subchunk und einem Subchunk für die Daten (DATA-Chunk).
+Das Waveform-Audiodatei-Format WAV ist ein Audioformat, das zum Speichern von Audioinformationen als Bitstream dient. Dieses Audioformat basiert auf der von Microsoft 
+entwickelten \texttt{Resource Interchange File Format Spezifikation} (RIFF), die die Speicherung von Audiostreams in Teilen bzw. Chunks vorsieht. Jede WAV-Datei besitzt eine Headerinformation, die in solche Chunks aufgeteilt wird, gefolgt von den eigentlich gespeicherten Daten. Diese Chunks werden durch eine eindeutige Kennzeichnung (ID), die Länge der darin befindliche Daten sowie durch die Daten selbst beschrieben. WAV-Dateien bestehen in der Regel aus den drei Chunks RIFF-Header, FMT-Subchunk und einem Subchunk für die Daten (DATA-Chunk).
 
-Der RIFF-Header besteht aus 12 Byte und ist unterteilt in jeweils 4 Byte. Die ersten 4 Byte geben die ChunkID (In diesem Fall RIFF) in ASCII Form an. Ist die ChunkID mit RIFF angegeben, liegen die folgenden Daten im Little-Endian Format vor. Bei RIFX würde das Big-Endian Format angenommen.
-Die folgenden 4 Byte geben die gesamte Größe (ChunkSize) der WAV Datei an (abgesehen von den beiden vorherigen 4 Byte Blöcken ChunkID und ChunkSize). Die folgenden 4 Byte beschreiben das Format, was im vorliegenden Fall von WAV-Dateien das Wort \texttt{WAVE} enthält.
+Der RIFF-Header besteht aus einer 12 Byte Information und ist in jeweils 4 Byte unterteilt. Die ersten 4 Byte geben die ChunkID (In diesem Fall RIFF) in ASCII Form an. Ist die ChunkID mit RIFF angegeben, liegen die folgenden Daten im Little-Endian Format vor. Bei RIFX würde das Big-Endian Format angenommen.
+Die folgenden 4 Byte geben die gesamte Größe (ChunkSize) der WAV-Datei an (abgesehen von den beiden vorherigen 4 Byte Blöcken ChunkID und ChunkSize). Die folgenden 4 Byte beschreiben das Format, was im vorliegenden Fall von WAV-Dateien das Wort \texttt{WAVE} enthält.
 
 Im FMT-Subchunk sind wichtige Metainformationen über die Audiodatei gespeichert. 
-Vier Byte Subchunk1ID sind durch \texttt{FMT } beschrieben, gefolgt von vier Byte Subchunk1Size. Im Falle des relevanten Audioformats PCM ist hier die Restgröße des FMT-Subchunks festgehalten. Byte 20 und 21 gibt das oben genannte Audioformat als Zahlenwert an. PCM wird durch eine 1 typisiert und beschreibt einen unkomprimierten Datenstrom in der Datei. Komprimierung würde durch andere Werte identifiziert. Die Bytes 22 und 23 geben die Anzahl der verwendeten Audiokanäle an (NumChannels), eine sehr wichtige Information zur räumlichen Aufteilung der Audiosignale. Die Sample Rate wird in den Bytes 24-27 angegeben und enthält die Angabe, wie viele Samples bei der Wiedergabe in einer Sekunde verarbeitet werden. Prinzipiell ist hier die Qualität der Audiodatei festgehalten. Oftmals liegen WAV Dateien in 44100hz vor. Bytes 28-31 gibt die Größe eines einzelnen Samples über alle Kanäle an. Folgende zwei Bytes (34 und 35) enthält die Größe für jeweils ein Sample, wobei sich hieraus auch die Kanalgröße in einem Sample errechnen lässt durch BitsPerSample / NumChannels. In dieser Arbeit wird ausschließlich mit 16 bit PCM WAV Dateien gearbeitet.
+Vier Byte Subchunk1ID sind durch den String \texttt{FMT } beschrieben, gefolgt von der vier Byte großen \texttt{Subchunk1Size}. Im Falle des relevanten Audioformats PCM ist hier die Restgröße des FMT-Subchunks festgehalten. Byte 20 und 21 gibt das oben genannte Audioformat als Zahlenwert an. PCM wird durch eine 1 typisiert und beschreibt einen unkomprimierten Datenstrom in der Datei. Komprimierung würde durch andere Werte identifiziert. Die Bytes 22 und 23 geben die Anzahl der verwendeten Audiokanäle an (NumChannels). Dies ist eine sehr wichtige Information zur räumlichen Aufteilung der Audiosignale z.b. zur Wiedergabe auf Audiogeräte mit mehreren Ausgabekanälen. Die Sample Rate wird in den Bytes 24-27 angegeben und enthält die Angabe, wie viele Samples bei der Wiedergabe in einer Sekunde verarbeitet werden. Prinzipiell ist hier die Qualität der Audiodatei festgehalten. Oftmals liegen WAV-Dateien in der Frequenz 44100hz vor. Bytes 28-31 geben die Größe eines einzelnen Samples über alle Kanäle betrachtet an. Die folgenden zwei Bytes (34 und 35) enthalten die Größe für jeweils ein Sample, wobei sich hieraus auch die Kanalgröße in einem Sample durch BitsPerSample / NumChannels errechnen lässt. In dieser Arbeit wird ausschließlich mit 16 bit PCM WAV-Dateien gearbeitet.
 
-
-Der DATA-Subchunk enthält die eigentliche Audioinformation, im zuvor vorgestellten Format beschrieben durch den FMT-Subchunk. Jeweils vier Bytes geben Subchunk2ID ("data") und die Größe dieses Chunks als Subchunk2Size an. Danach folgen die eigentlichen Daten.
+Der DATA-Subchunk enthält die eigentliche Audioinformation im zuvor vorgestellten Format, beschrieben durch den FMT-Subchunk. Jeweils vier Bytes geben Subchunk2ID ("data") und die Größe dieses Chunks als Subchunk2Size an. Danach folgen die eigentlichen Daten.
 
 Abbildung \ref{fig:wav} zeigt diese Formatspezifikation anhand eines in dieser Arbeit verwendeten Audiofiles.
 
@@ -25,25 +24,25 @@ Abbildung \ref{fig:wav} zeigt diese Formatspezifikation anhand eines in dieser A
 \end{figure}
 
 \subsection{Nyquist}
-Nyquist ist eine Programmiersprache zur synthetischen Erzeugung von Audio und zur Analyse von bestehenden Audioquellen. Basierend auf der Sprache Lisp stellt Nyquist eine Erweiterung des XLISP Dialekt dar. Die Entwicklung wurde von der Yamaha Corporation und IBM unterstützt vom Mitgründer des Audiobearbeitungsprogramms Audacity Roger Dannenberg durchgeführt \cite{nyquist_official}.
+Nyquist ist eine Programmiersprache zur synthetischen Erzeugung von Audiosignalen und zur Analyse von bestehenden Audioquellen. Basierend auf der Sprache Lisp stellt Nyquist eine Erweiterung des XLISP Dialekt dar. Die Entwicklung wurde von der Yamaha Corporation und IBM unterstützt vom Mitgründer des Audiobearbeitungsprogramms Audacity Roger Dannenberg durchgeführt \cite{nyquist_official}.
 
-Audacity biete eine direkte Schnittstelle zur Nyquist Programmiersprache als direkt verwendbares Plugin. In dieser Arbeit wird dieses Plugin benutzt, um Wind-ähnliche Audiospuren zu generieren, um diese im Weiteren analysieren zu können. In folgender Abbildung \ref{sub:nyquist-wind} wird das dazu verwendete Codesegment dargestellt.
+Audacity biete eine direkte Schnittstelle zur Nyquist Programmiersprache als verwendbares Plugin. In dieser Arbeit wird dieses Plugin benutzt, um Wind-ähnliche Audiospuren zu generieren, um diese im Weiteren mitunter analysieren zu können. In folgender Abbildung \ref{sub:nyquist-wind} wird das dazu verwendete Codesegment dargestellt.
 \begin{figure}[t!]
-		\lstinputlisting[language=nyquist]{code/wind.ny}
+		\lstinputlisting[language=nyquist, frame=none]{code/wind.ny}
 		\caption{Nyquist synthetischer Wind}
 		\label{sub:nyquist-wind}
 \end{figure}
 
-In den ersten vier Zeilen werden Header-Informationen festgelegt, die Audacity auswerten kann. Der Typ gibt dabei an, unter welcher Rubrik (Generate, Effect, Analyze, etc.) das Plugin zu finden sein wird. In den Zeilen 6 bis 9 werden Benutzereingaben angefragt und deren Typ festgelegt. Die Eingabe wird als Schieberegler visualisiert und durch die jeweils am Ende der Zeile befindlichen Werte begrenzt. Für das Wind Beispiel werden Dauer \texttt{dur}, Skalierung \texttt{scal}, Zyklen pro Sekunde \texttt{cps} und Bandbreite \texttt{bw} benötigt Die Bandbreite gibt dabei die Amplitudengröße der Signalwellen an.
+In den ersten vier Zeilen werden Header-Informationen festgelegt, die Audacity auswerten kann. Der Typ gibt dabei an, unter welcher Rubrik (Generate, Effect, Analyze, etc.) das Plugin zu finden sein wird. In den Zeilen 6 bis 9 werden Benutzereingaben angefragt und deren Typ festgelegt. Die Eingabe wird als Schieberegler zugreifbar und durch die jeweils am Ende der Zeile befindlichen Werte begrenzt. Für das Wind Beispiel werden Dauer \texttt{dur}, Skalierung \texttt{scal}, Zyklen pro Sekunde \texttt{cps} und Bandbreite \texttt{bw} benötigt. Die Bandbreite gibt dabei die Amplitudengröße der Signalwellen an.
 In Zeilen 11 bis 22 wird die Funktion zur Generierung des Wind Beispiels definiert.
-Der funktionale Aufbau des Windbeispiels nimmt als Grundlage ein Muster aus dem offiziellen Audacity Forum \cite{wind_effect}. Dieses basiert auf einer Transformation und verschiedenen Skalierungen des Weißen Rauschens, das in Audacity mit der buildin Funktion \texttt{noise()} realisiert wird. Eine detailliertere Beschreibung ist in der offiziellen Anleitung \cite{ny_manual} zu finden.
+Der funktionale Aufbau des Windbeispiels nimmt als Grundlage ein Muster aus dem offiziellen Audacity Forum \cite{wind_effect}. Dieses basiert auf einer Transformation und verschiedenen Skalierungen des Weißen Rauschens, das in Audacity mit der Buildin Funktion \texttt{noise()} erzeugt werden kann. Eine detailliertere Beschreibung ist in der offiziellen Anleitung \cite{ny_manual} zu finden.
 
 Mit der Methode \texttt{wind} können letztendlich einzelne Windspuren mit einer festgelegten "Tonhöhe" erzeugt werden. Um ein komplexeres Beispiel zu erzeugen, wurden zwei Tonspuren des Windes auf jeweils einen Stereo-Kanal überlagert.
-Außerdem können in der Audacity Nyquist-Eingabeaufforderung Sinuswellen mit zu einer gegebenen Frequenz erzeugt werden. Zur Verifizierung der in Kapitel \ref{CUDA_DSP} implementierten Fouriertransformationen, wurde analog zu Abbildung  \ref{sub:nyquist-wind} mit einem kleinen Nyquist Plugin \texttt{Code: return *track* + osc(freq)} eine Stereo WAV-Datei mit zwei Sinuswellen 30 bzw. 60 Hertz auf dem linken bzw. rechten Audiokanal erzeugt.
+Außerdem können in der Audacity Nyquist-Eingabeaufforderung Sinuswellen zu einer gegebenen Frequenz erzeugt werden. Zur Verifizierung der in Kapitel \ref{CUDA_DSP} implementierten Fouriertransformationen, wurde analog zu Abbildung  \ref{sub:nyquist-wind} mit einem kleinen Nyquist Plugin \texttt{Code: return *track* + osc(freq)} eine Stereo WAV-Datei mit zwei Sinuswellen 30 bzw. 60 Hertz auf dem linken bzw. rechten Audiokanal erzeugt.
+\newpage
+\subsection{Fouriertransformation}
 
-\subsection{Fourier Transformation}
-
-Die Fourier Transformation bzw. Fourier Analyse ist  einer der weit verbreitetsten Werkzeuge im Bereich der Signalanalyse und -verarbeitung. Basierend auf den Fourier Reihen (von Jean-Baptiste-Joseph de Fourier) kann damit errechnet werden, aus welchen harmonische Signalen ein periodisches Signal aufgebaut ist. Dabei unterscheiden sich die Ausgangssignale zwischen Amplitude, Frequenz und Phasenlage bzw. Phasenverschiebung. Der Grundgedanke bei der Fourier Analyse ist, dass jedes periodisches Signal durch ein Gleichanteil und einer unendlichen Summe harmonischer Signale dargestellt werden kann. Harmonische Signale werden in Form von Linearkombinationen dargestellt. Die Bestimmung der Unbekannten, die in diesem Fall Fourierkoeffizienten genannt werden, ist Gegenstand der Fourieranalyse. Die allgemeine Fourierreihe oder auch trigonometrische Reihe wird dargestellt durch:
+Die Fouriertransformation bzw. Fourieranalyse ist einer der weit verbreitetsten Werkzeuge im Bereich der Signalanalyse und Signalverarbeitung. Basierend auf den Fourier Reihen (von Jean-Baptiste-Joseph de Fourier) kann damit errechnet werden, aus welchen harmonischen Signalen ein periodisches Signal aufgebaut ist. Dabei unterscheiden sich die Ausgangssignale zwischen Amplitude, Frequenz und Phasenlage bzw. Phasenverschiebung. Der Grundgedanke bei der Fourier Analyse ist, dass jedes periodisches Signal durch ein Gleichanteil und einer unendlichen Summe harmonischer Signale dargestellt werden kann. Harmonische Signale werden in Form von Linearkombinationen dargestellt. Die Bestimmung der Unbekannten, die in diesem Fall Fourierkoeffizienten genannt werden, ist Gegenstand der Fourieranalyse. Die allgemeine Fourierreihe oder auch trigonometrische Reihe wird dargestellt durch:
 
 
 \begin{flushleft}
@@ -57,7 +56,7 @@ Die Fourier Transformation bzw. Fourier Analyse ist  einer der weit verbreitetst
 	\end{gathered}\label{eq:1}
 \end{equation}
 \paragraph{DFT}
-In Definition ~\eqref{eq:1} ist die Zerlegung eines periodischen Signals, als unendliche Summe von Linearkombinationen dargestellt. Ein Spezialfall dieser Formel, deren Koeffizienten in komplexer Form angegeben werden ist in Definition \eqref{eq:2} erkennbar und mithilfe von \cite{arenz_fourier} nachzuvollziehen.
+In Definition ~\eqref{eq:1} ist die Zerlegung eines periodischen Signals als unendliche Summe von Linearkombinationen dargestellt. Ein Spezialfall dieser Formel, deren Koeffizienten in komplexer Form angegeben werden, ist in Definition \eqref{eq:2} erkennbar und mithilfe von \cite{arenz_fourier} nachzuvollziehen.
 
 \begin{flushleft}
 	\textbf{Definition \eqref{eq:2}}: Diskrete Fouriertransformation
@@ -71,7 +70,7 @@ In Definition ~\eqref{eq:1} ist die Zerlegung eines periodischen Signals, als un
 \end{equation}
 
 Der Zusammenhang zwischen Definitionen \eqref{eq:1} und \eqref{eq:2} wird klar, wenn das auf der Eulerschen Formel basierende Theorem von De Moivre \cite{de_moivre} angewendet wird.
-
+\newpage
 \begin{flushleft}
 	\textbf{Definition \eqref{eq:3}}: Herstellung des Zusammenhangs zw. \eqref{eq:1} und \eqref{eq:2}
 \end{flushleft}
@@ -84,7 +83,7 @@ Der Zusammenhang zwischen Definitionen \eqref{eq:1} und \eqref{eq:2} wird klar, 
 \end{equation}
 
 \paragraph{FFT}
-Die Fast Fourier Transformation von James W. Cooley und John W. Tukey ist ein verbesserter Algorithmus zur Durchführung der Fourier Transformation. Analog zur Namensgebung werden wesentlich weniger Operationen benötigt, um das Ergebnis zu errechnen. Grundannahme ist eine Länge des Eingabesignals von $N = 2^{M}$, mit $M\in\mathbb{N}$.
+Die Fast Fourier Transformation von James W. Cooley und John W. Tukey ist ein verbesserter Algorithmus zur Durchführung der Fouriertransformation. Analog zur Namensgebung werden wesentlich weniger Rechenoperationen benötigt, um das Ergebnis zu errechnen. Grundannahme ist eine Länge des Eingabesignals von $N = 2^{M}$, mit $M\in\mathbb{N}$.
 Die Besonderheit ist, dass der Algorithmus rekursiv ausgeführt wird.
 Gerade und ungerade Vektoren vom Ausgangsvektor $\vec{f}$ werden rekursiv aufgeteilt, bis $N$ Vektoren der Länge $2^{0}$ vorliegen:
 
@@ -99,7 +98,7 @@ Gerade und ungerade Vektoren vom Ausgangsvektor $\vec{f}$ werden rekursiv aufget
 	\end{gathered}\label{eq:4}
 \end{equation}
 
-mithilfe der Diskreten Fourier Transformation $f^{DFT}$, lässt sich die Gleichung der Schnellen Fouriertransformation aufstellen:
+Mithilfe der Diskreten Fouriertransformation $f^{DFT}$ lässt sich die Gleichung der Fast Fouriertransformation aufstellen:
 
 \begin{flushleft}
 	\textbf{Definition \eqref{eq:5}}: Fast Fourier Transformation \cite{arenz_fourier}
@@ -115,4 +114,4 @@ mithilfe der Diskreten Fourier Transformation $f^{DFT}$, lässt sich die Gleichu
 
 
 \paragraph{Randnotiz}
-Zu beiden Varianten der Fourier Transformation existiert eine wohl definierte Inverse Rechenoperation, die aus den harmonischen Signalen wieder das periodische Ausgangssignal errechnet. Diese Inverse wird hier nicht weiter erläutert, da sie in dieser Arbeit keine Anwendung findet. 
+Zu beiden Varianten der Fourier Transformation existiert eine wohl definierte Inverse Rechenoperation, die aus den harmonischen Signalen wieder das periodische Ausgangssignal errechnet. Diese Inverse wird hier nicht weiter erläutert, da sie in dieser Arbeit keine Anwendung findet.

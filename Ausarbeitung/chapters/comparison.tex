@@ -1,13 +1,13 @@
 % !TeX spellcheck = de_DE
 
-\section{Ergebnisse}
-Dieses Kapitel listet einige Testreihen mit verschiedenen Audiodateien auf. Für jede Audiodatei werden Tests mit zwei verschiedene Schwellwerte an Eingabesamples und diese jeweils für beide AudioTracer-Module wiederholt.
+\section{Ergebnisse} \label{audiotracer_results}
+Dieses Kapitel listet einige Testreihen mit verschiedenen Audiodateien auf. Für jede Audiodatei werden Tests mit zwei verschiedenen Schwellwerten an Eingabesamples und diese jeweils für beide AudioTracer-Module wiederholt.
 Die Testreihen sind wie folgt einzuordnen:
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{|c | c | c | c|}
 		\hline
-		Testreihe & \#Samples & C \#Kanäle & Modul(AudioTracer)\\
+		Testreihe & \#Samples & \#Kanäle & Modul(AudioTracer)\\
 		\hline\hline
 		1		&	5000	&	2	&	C \\
 		2		&	5000	&	2	&	Python \\
@@ -44,7 +44,7 @@ Die Dateien bestehen aus je einer Sinuskurve für jeden Audiokanal mit bekannter
 \subsection{AudioTracer C}
 Die Auswertung für das AudioTracer(C)-Modul thematisiert die Testreihen 1, 3, 5 und 7.
 Dabei werden die Reihen mit gleicher Anzahl von Audiokanälen nebeneinander abgebildet.
-Hierbei sei zu bemerken, dass die Ergebnisse eine Momentaufnahme einer Live-Visualisierung darstellen. Jeweils ein Block der Fouriertransformierten Daten der Größe \#Samples wird hier abgebildet. 
+Hierbei sei zu bemerken, dass die Ergebnisse eine Momentaufnahme einer Live-Visualisierung darstellen. Jeweils ein Block der fouriertransformierten Daten der Größe \#Samples wird hier abgebildet. 
 
 \paragraph{Testreihe 1 und 3}
 -
@@ -60,7 +60,7 @@ Hierbei sei zu bemerken, dass die Ergebnisse eine Momentaufnahme einer Live-Visu
 	\end{tabular}	
 \end{table}
 
-Die negativen Frequenzen werden zukünftig nicht mehr mit aufgezählt, da diese rechnerisch durch die Fourier Transformation gleich sind. Aus Gründen der Vervollständigung wurden diese hier mit angegeben und sind implizit bei den restlichen Testreihen zu erwarten.
+Die negativen Frequenzen werden zukünftig nicht mehr mit aufgezählt, da diese rechnerisch durch die Fouriertransformation gleich sind. Aus Gründen der Vervollständigung wurden diese hier mit angegeben und sind implizit bei den restlichen Testreihen zu erwarten.
 
 \begin{figure}[h!]
 	\centering      
@@ -175,12 +175,12 @@ Die negativen Frequenzen werden zukünftig nicht mehr mit aufgezählt, da diese 
 
 \subsection{Vergleich der Testreihen}
 
-Das Ziel der Anwendung einer Fouriertransformation ist eine möglichst genaue Extraktion der einzelnen Frequenzen, die an gegebenem Testbereich anteilig sind.
-Erkennbar ist, dass die ermittelten Frequenzen nicht genau die erwarteten Hertz Zahlen erreichen. Ein genereller Trend ist bei den Testreihen 5, 7 und 6, 8 mit vier Audiokanälen zu zuerkennen. Hier werden die Ergebnisse mit steigender Sample Anzahl genauer. Die Abweichungen liegen den Reihen 7 und 8 bei 0,012 bis 0,84 Hz. Die Testreihen 5 und 6 weisen einen Fehlerbereich von 1,24 bis 3,54Hz auf, was die Eingangsthese unterstützt.
+Das Ziel der Anwendung einer Fouriertransformation ist eine möglichst genaue Extraktion der einzelnen Frequenzen, die zum angegebenen Teilbereich gehören.
+Erkennbar ist, dass die ermittelten Frequenzen nicht genau die erwarteten Hertz-Zahlen erreichen. Ein genereller Trend ist bei den Testreihen 5, 7 und 6, 8 mit vier Audiokanälen zu erkennen. Hier werden die Ergebnisse mit steigender Sample Anzahl genauer. Die Abweichungen liegen den Reihen 7 und 8 bei 0,012 bis 0,84 Hz. Die Testreihen 5 und 6 weisen einen Fehlerbereich von 1,24 bis 3,54Hz auf, was die Eingangsthese unterstützt.
 
-Bei den Testreihen mit nur zwei Audiokanälen ist eine ähnliche Tendenz zu erkennen, jedoch treten hier folgende Anomalie auf. Der mit 300Hz zu erwartende Wert weist bei allen vier teilhabenden Testreihen (1, 3, 2 und 4) denselben Wert von 299,88Hz auf. Bei zu erwartenden 40Hz im zweiten Audiokanal liegen die Testreihen mit 5000 Audiosamples mit 4,1Hz deutlich über denen mit 25000 Audiosamples (1,192Hz und 0.572Hz). Außerdem sind die Ergebnisse zwischen C und Python Modul unterschiedlich, was bei den Testreihen mit vier Audiokanälen nicht der Fall ist. Die Annahme liegt nahe, dass bedingt durch die Momentaufnahme der Ausgabe ein \enquote{ungünstiger} Moment aufgenommen wurde, und somit die Daten ungenau werden. Der Unterschied zwischen zwei Frequenzen fällt bereits bei 1Hz Differenz durch genaues Hinhören auf.
+Bei den Testreihen mit nur zwei Audiokanälen ist eine ähnliche Tendenz zu erkennen, jedoch treten hier folgende Anomalien auf: Der mit 300Hz zu erwartende Wert weist bei allen vier teilhabenden Testreihen (1, 3, 2 und 4) denselben Wert von 299,88Hz auf. Bei zu erwartenden 40Hz im zweiten Audiokanal liegen die Testreihen mit 5000 Audiosamples mit 4,1Hz deutlich über denen mit 25000 Audiosamples (1,192Hz und 0.572Hz). Außerdem sind die Ergebnisse zwischen C- und Python-Modul unterschiedlich, was bei den Testreihen mit vier Audiokanälen nicht der Fall ist. Die Annahme liegt nahe, dass bedingt durch die Momentaufnahme der Ausgabe ein \enquote{ungünstiger} Moment aufgenommen wurde und somit die Daten ungenau werden. Der Unterschied zwischen zwei Frequenzen fällt bereits bei 1Hz Differenz durch genaues Hinhören auf.
 
-Allgemein ist sticht jedoch heraus, dass die Erhöhung der Eingabesamples für eine genauere Berechnung der Fourier Frequenzen sorgt. 
+Allgemein sticht jedoch heraus, dass die Erhöhung der Eingabesamples für eine genauere Berechnung der Fourierfrequenzen sorgt. 
 
 
 
